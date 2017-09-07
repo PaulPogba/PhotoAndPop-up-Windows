@@ -1,0 +1,6 @@
+framework module Pods_PhotobombAndPop_upWindows {
+  umbrella header "Pods-PhotobombAndPop_upWindows-umbrella.h"
+
+  export *
+  module * { export * }
+}
