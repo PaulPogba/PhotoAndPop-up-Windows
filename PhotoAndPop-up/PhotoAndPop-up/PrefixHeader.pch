@@ -1,0 +1,137 @@
+//
+//  PrefixHeader.pch
+//  PhotoAndPop-up
+//
+//  Created by Marchisio on 2017/9/7.
+//  Copyright © 2017年 Marchisio. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Masonry.h"
+#import "Colours.h"
+#import "UIView+Extension.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "UIButton+TQEasyIcon.h"
+//#import "UIView+AJBAlbumSheetView.h"
+//#import ""
+
+#define FIT_SIZE_X(x)       (CGFloat)((x)/375.0*SCREEN_WIDTH)
+#define FIT_SIZE_Y(y)       (CGFloat)((y)/667.0*SCREEN_HEIGHT)
+
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define NAVITETION_HEIGHT 64
+#define STATEBAR_HEIGHT 20
+#define TABBAR_HEIGHT 64
+
+#define LINE_HEIGHT 0.5
+/*
+ color 颜色
+ */
+#define COLOR_UI_54C1F5 [UIColor colorFromHexString:@"50b7e9"]//@"54C1F5"] //主色
+#define COLOR_UI_22BD7A [UIColor colorFromHexString:@"22BD7A"]
+
+/*
+ font 字体
+ */
+#define FONT_OF_SIZE_32 [UIFont systemFontOfSize:32]
+#define FONT_OF_SIZE_25 [UIFont systemFontOfSize:25]
+#define FONT_OF_SIZE_18 [UIFont systemFontOfSize:18]
+#define FONT_OF_SIZE_17 [UIFont systemFontOfSize:17]
+#define FONT_OF_SIZE_15 [UIFont systemFontOfSize:15]
+#define FONT_OF_SIZE_16 [UIFont systemFontOfSize:16]
+#define FONT_OF_SIZE_14 [UIFont systemFontOfSize:14]
+#define FONT_OF_SIZE_13 [UIFont systemFontOfSize:13]
+#define FONT_OF_SIZE_12 [UIFont systemFontOfSize:12]
+#define FONT_OF_SIZE_11 [UIFont systemFontOfSize:11]
+#define FONT_OF_SIZE_10 [UIFont systemFontOfSize:10]
+/*
+ 颜色
+ */
+#define COLOR_UI_f09800 [UIColor colorFromHexString:@"f09800"]
+#define COLOR_UI_09bb07 [UIColor colorFromHexString:@"09bb07"]
+#define COLOR_UI_dddddd [UIColor colorFromHexString:@"dddddd"]
+#define COLOR_UI_333333 [UIColor colorFromHexString:@"333333"]
+#define COLOR_UI_d3d3d3 [UIColor colorFromHexString:@"d3d3d3"]
+#define COLOR_UI_02bf00 [UIColor colorFromHexString:@"02bf00"]
+#define COLOR_UI_9c9c9c [UIColor colorFromHexString:@"9c9c9c"]
+#define COLOR_UI_576b95 [UIColor colorFromHexString:@"576b95"]
+#define COLOR_UI_bcbcbc [UIColor colorFromHexString:@"bcbcbc"]
+#define COLOR_UI_589ef8 [UIColor colorFromHexString:@"589ef8"]
+#define COLOR_UI_000000 [UIColor colorFromHexString:@"000000"]
+#define COLOR_UI_888888 [UIColor colorFromHexString:@"888888"]
+#define COLOR_UI_e5e5e5 [UIColor colorFromHexString:@"e5e5e5"]
+#define COLOR_UI_858585 [UIColor colorFromHexString:@"858585"]
+#define COLOR_UI_53d769 [UIColor colorFromHexString:@"53d769"]
+#define COLOR_UI_d9d9d9 [UIColor colorFromHexString:@"d9d9d9"]
+#define COLOR_UI_313131 [UIColor colorFromHexString:@"313131"]
+#define COLOR_UI_8A8A8A [UIColor colorFromHexString:@"8A8A8A"]
+#define COLOR_UI_9FA7AD [UIColor colorFromHexString:@"9FA7AD"]
+#define COLOR_UI_F4F4F4 [UIColor colorFromHexString:@"F4F4F4"]
+#define COLOR_UI_efeff4 [UIColor colorFromHexString:@"efeff4"]
+#define COLOR_UI_dcdcdc [UIColor colorFromHexString:@"dcdcdc"]
+#define COLOR_UI_1aad19 [UIColor colorFromHexString:@"1aad19"]
+#define COLOR_UI_efeff4 [UIColor colorFromHexString:@"efeff4"]
+#define COLOR_UI_c7c7cc [UIColor colorFromHexString:@"c7c7cc"]
+#define COLOR_UI_ff3b30 [UIColor colorFromHexString:@"ff3b30"]
+#define COLOR_UI_546a96 [UIColor colorFromHexString:@"546a96"]
+#define COLOR_UI_f3f3f5 [UIColor colorFromHexString:@"f3f3f5"]
+#define COLOR_UI_5c5b5d [UIColor colorFromHexString:@"5c5b5d"]
+#define COLOR_UI_eae9e7 [UIColor colorFromHexString:@"eae9e7"]
+#define COLOR_UI_999999 [UIColor colorFromHexString:@"999999"]
+#define COLOR_UI_e0e0e0 [UIColor colorFromHexString:@"e0e0e0"]
+#define COLOR_UI_666666 [UIColor colorFromHexString:@"666666"]
+#define COLOR_UI_4c5154 [UIColor colorFromHexString:@"4c5154"]
+#define COLOR_UI_373d40 [UIColor colorFromHexString:@"373d40"]
+#define COLOR_UI_383939 [UIColor colorFromHexString:@"383939"]
+#define COLOR_UI_eaeaea [UIColor colorFromHexString:@"eaeaea"]
+#define COLOR_UI_f1f1f1 [UIColor colorFromHexString:@"f1f1f1"]
+#define COLOR_UI_f8f8f8 [UIColor colorFromHexString:@"f8f8f8"]
+#define COLOR_UI_c7c7c5 [UIColor colorFromHexString:@"c7c7c5"]
+#define COLOR_UI_f6f6f6 [UIColor colorFromHexString:@"f6f6f6"]
+#define COLOR_UI_ccd2df [UIColor colorFromHexString:@"ccd2df"]
+#define COLOR_UI_1aad19 [UIColor colorFromHexString:@"1aad19"]
+#define COLOR_UI_dadbdf [UIColor colorFromHexString:@"dadbdf"]
+#define COLOR_UI_b3b3b3 [UIColor colorFromHexString:@"b3b3b3"]
+#define COLOR_UI_808080 [UIColor colorFromHexString:@"808080"]
+#define COLOR_UI_2e3132 [UIColor colorFromHexString:@"2e3132"]
+#define COLOR_UI_a6a6a6 [UIColor colorFromHexString:@"a6a6a6"]
+#define COLOR_UI_555555 [UIColor colorFromHexString:@"555555"]
+
+#define COLOR_UI_RANDOM [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:0.8]
+
+/*
+ String
+ */
+#define SAFE_STR(str) ((str) == nil?@"":str)
+#define SAFE_STR_ZERO(str) (((str) == nil || [str length] < 1)?@"0":str)
+#define IS_STR_EMPTY(str) ((str == nil || [str length]<1 || [str isKindOfClass:[NSNull class]]) ? YES : NO )
+/*
+ margin
+ */
+#define MARGIN_60 60
+#define MARGIN_50 50
+#define MARGIN_40 40
+#define MARGIN_30 30
+#define MARGIN_25 25
+#define MARGIN_20 20
+#define MARGIN_15 15
+#define MARGIN_10 10
+#define MARGIN_8  8
+#define MARGIN_5  5
+
+typedef NS_ENUM(NSInteger, ShareType)
+{
+    ShareType_Default = 0, // 没有保障圈
+    ShareType_ProtectFeeds = 1,  //有保障圈
+};
+
+#define imageNamed(str) [UIImage imageNamed:[NSString stringWithFormat:@"ImageContainer.bundle/image/%@",str]]
+
+
+#define WEAKSELF __weak typeof(self)  __weakSelf = self;
+
+#endif /* PrefixHeader_pch */

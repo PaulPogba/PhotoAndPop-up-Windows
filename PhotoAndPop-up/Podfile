@@ -1,0 +1,6 @@
+target 'PhotoAndPop-up' do
+	use_frameworks!
+	pod 'Masonry'
+	pod 'SDWebImage'
+
+end

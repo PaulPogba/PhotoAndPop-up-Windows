@@ -1,0 +1,6 @@
+framework module Pods_PhotoAndPop_up {
+  umbrella header "Pods-PhotoAndPop-up-umbrella.h"
+
+  export *
+  module * { export * }
+}
